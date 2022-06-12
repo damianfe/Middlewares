@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs')%>
+  <body>
+    <h1><%= title %></h1>
+
+    <%- include('./partials/header.ejs')%>
+    <form method="GET" action="/admin">
+      <div>
+        <label for="user">User</label>
+		<br>
+        <input
+          type="text"
+          name="user"
+          id="user"
+          placeholder="Nombre de usuario"
+        />
+      </div>
+	  <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
